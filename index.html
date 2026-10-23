@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Girl & Boy · 25 November</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,wght@0,300;0,600;1,300&display=swap">
+<style>
+:root{--bg:#0d0618;--ink:#f6ecff;--soft:#c9b3ea;--pink:#ff8fc7;--violet:#9b6dff;--glass:rgba(40,20,70,.45);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{background:var(--bg);color:var(--ink);font-family:Fraunces,Georgia,serif;overflow-x:hidden}
+#c{position:fixed;inset:0;width:100%;height:100%;z-index:0}
+.grain{position:fixed;inset:0;z-index:2;pointer-events:none;opacity:.09;mix-blend-mode:overlay;
+background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>")}
+.vig{position:fixed;inset:0;z-index:1;pointer-events:none;background:radial-gradient(ellipse at center,transparent 45%,rgba(13,6,24,.85))}
+nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:5;display:flex;justify-content:space-between;padding:18px 26px;font-family:Caveat,cursive;font-size:1.4rem;color:var(--soft)}
+#bar{position:fixed;left:0;top:0;height:3px;width:0;z-index:6;background:linear-gradient(90deg,var(--violet),var(--pink))}
+main{position:relative;z-index:3}
+section{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:90px 24px}
+.r{opacity:0;transform:translateY(40px) scale(.97);filter:blur(8px);transition:all 1.2s cubic-bezier(.2,.7,.2,1)}
+.in .r{opacity:1;transform:none;filter:none}
+.in .r:nth-child(2){transition-delay:.15s}.in .r:nth-child(3){transition-delay:.3s}.in .r:nth-child(4){transition-delay:.45s}
+.tag{font-family:Caveat,cursive;font-size:1.6rem;color:var(--pink);letter-spacing:.04em}
+h1{font-weight:300;font-size:clamp(3.2rem,12vw,9rem);line-height:.95;letter-spacing:-.03em;text-shadow:0 0 60px rgba(155,109,255,.7)}
+h1 i{color:var(--pink);font-style:italic}
+h2{font-weight:300;font-size:clamp(2rem,6vw,4.2rem);line-height:1.1;max-width:18ch;text-shadow:0 0 40px rgba(155,109,255,.6)}
+h2 i{color:var(--pink)}
+p{max-width:46ch;color:var(--soft);font-size:clamp(1rem,2.4vw,1.25rem);line-height:1.7;margin-top:18px}
+.hint{position:absolute;bottom:30px;font-family:Caveat,cursive;font-size:1.3rem;color:var(--soft);animation:b 2s infinite}
+@keyframes b{50%{transform:translateY(8px)}}
+.pol{display:flex;flex-wrap:wrap;gap:26px;justify-content:center;margin-top:34px}
+.card{width:190px;background:#fbf4ff;color:#3a2160;padding:12px 12px 16px;border-radius:6px;box-shadow:0 20px 60px rgba(0,0,0,.5),0 0 40px rgba(155,109,255,.35);transition:transform .5s}
+.card:nth-child(1){transform:rotate(-6deg)}.card:nth-child(2){transform:rotate(3deg) translateY(14px)}.card:nth-child(3){transform:rotate(-3deg)}
+.card:hover{transform:rotate(0) scale(1.08) !important}
+.ph{height:150px;border-radius:3px;display:grid;place-items:center;font-size:3.4rem;background:linear-gradient(135deg,#ffc4e3,#b99bff);filter:sepia(.25) saturate(1.1)}
+.card b{display:block;margin-top:10px;font-family:Caveat,cursive;font-size:1.45rem;font-weight:700}
+.cd{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap;justify-content:center}
+.cd div{min-width:92px;padding:18px 10px;background:var(--glass);border:1px solid rgba(201,179,234,.25);border-radius:20px;backdrop-filter:blur(10px)}
+.cd strong{display:block;font-size:2.6rem;font-weight:300}
+.cd span{font-family:Caveat,cursive;color:var(--pink);font-size:1.2rem}
+button{margin-top:34px;font:700 1.5rem Caveat,cursive;color:#fff;border:0;padding:14px 38px;border-radius:99px;cursor:pointer;background:linear-gradient(135deg,var(--violet),var(--pink));box-shadow:0 0 40px rgba(255,143,199,.55);transition:transform .3s}
+button:hover{transform:scale(1.08)}
+.fl{position:fixed;z-index:9;pointer-events:none;font-size:1.6rem;animation:up 3s ease-out forwards}
+@keyframes up{to{transform:translateY(-110vh) rotate(40deg);opacity:0}}
+small{margin-top:40px;font-family:Caveat,cursive;font-size:1.3rem;color:var(--soft)}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<canvas id="c"></canvas><div class="vig"></div><div class="grain"></div>
+<nav><span>♡ Girl &amp; Boy</span><span>25 · 11</span></nav>
+<main>
+<section class="in" id="s0">
+  <div class="tag r">a love story, in violet</div>
+  <h1 class="r">Girl <i>&amp;</i> Boy</h1>
+  <p class="r">Twenty-fifth of November. The day a nervous Boy asked a question, and Girl answered with the best word in the world.</p>
+  <div class="hint">scroll slowly, like we used to ↓</div>
+</section>
+<section>
+  <div class="tag r">chapter one</div>
+  <h2 class="r">It started with a <i>hello</i> that felt like home.</h2>
+  <p class="r">Remember the first messages, the long calls, the way time melted? Somewhere in the glow of it all, we stopped being two people.</p>
+</section>
+<section>
+  <div class="tag r">chapter two</div>
+  <h2 class="r">Then came <i>that</i> evening.</h2>
+  <p class="r">Shaky hands. A racing heart. Boy forgot every word he had practised, and Girl looked at him like he was the whole sky.</p>
+</section>
+<section>
+  <div class="tag r">little polaroids</div>
+  <h2 class="r">Memories we keep <i>on repeat</i></h2>
+  <div class="pol r">
+    <div class="card"><div class="ph">🌙</div><b>the nervous hello</b></div>
+    <div class="card"><div class="ph">💍</div><b>the shaky hands</b></div>
+    <div class="card"><div class="ph">💜</div><b>the happiest yes</b></div>
+  </div>
+</section>
+<section>
+  <div class="tag r">until our next 25th of November</div>
+  <h2 class="r">Counting down to <i>our day</i></h2>
+  <div class="cd r" id="cd"></div>
+  <p class="r" id="cdn"></p>
+</section>
+<section style="min-height:130vh">
+  <div class="tag r">and now, the part I never stopped meaning</div>
+  <h2 class="r" style="max-width:20ch">Girl, I’d ask you <i>all over again.</i></h2>
+  <p class="r">Every sunrise, every silly joke, every quiet evening: it’s you, always you. Thank you for saying yes, and for saying it every day since.</p>
+  <button class="r" id="yes">Say yes again 💜</button>
+  <small class="r">— forever yours, Boy</small>
+</section>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+var cv=document.getElementById('c'),W=innerWidth,H=innerHeight;
+var ren=new THREE.WebGLRenderer({canvas:cv,antialias:true});
+ren.setPixelRatio(Math.min(devicePixelRatio,2));ren.setSize(W,H);
+var sc=new THREE.Scene();sc.background=new THREE.Color(0x0d0618);sc.fog=new THREE.FogExp2(0x1a0836,.028);
+var cam=new THREE.PerspectiveCamera(60,W/H,.1,200);cam.position.z=10;
+sc.add(new THREE.AmbientLight(0x8060c0,.8));
+var pl=new THREE.PointLight(0xff8fc7,2.2,40);sc.add(pl);
+var pl2=new THREE.PointLight(0x9b6dff,2,60);pl2.position.set(0,0,-30);sc.add(pl2);
+
+// heart shape
+var s=new THREE.Shape();s.moveTo(0,-1);
+s.bezierCurveTo(-.2,-.7,-1.1,-.2,-1.1,.35);s.bezierCurveTo(-1.1,.95,-.3,1.1,0,.55);
+s.bezierCurveTo(.3,1.1,1.1,.95,1.1,.35);s.bezierCurveTo(1.1,-.2,.2,-.7,0,-1);
+var hg=new THREE.ExtrudeGeometry(s,{depth:.45,bevelEnabled:true,bevelSize:.12,bevelThickness:.15,bevelSegments:4,curveSegments:16});
+hg.center();
+
+var hearts=[],cols=[0xff8fc7,0xb88cff,0xff6fae,0x9b6dff,0xffc4e3];
+for(var i=0;i<34;i++){
+  var m=new THREE.Mesh(hg,new THREE.MeshStandardMaterial({color:cols[i%5],emissive:cols[i%5],emissiveIntensity:.35,roughness:.35,metalness:.2}));
+  var a=Math.random()*6.28,r=3+Math.random()*7,sz=.3+Math.random()*.6;
+  m.position.set(Math.cos(a)*r,Math.sin(a)*r*.6,-Math.random()*58);
+  m.scale.setScalar(sz);m.userData={a:Math.random()*6,sp:.3+Math.random()*.6,y:m.position.y};
+  sc.add(m);hearts.push(m);
+}
+// hero orb
+var orb=new THREE.Mesh(new THREE.IcosahedronGeometry(1.7,2),new THREE.MeshBasicMaterial({color:0x9b6dff,wireframe:true,transparent:true,opacity:.55}));
+orb.position.set(0,0,0);sc.add(orb);
+var core=new THREE.Mesh(new THREE.SphereGeometry(.9,32,32),new THREE.MeshBasicMaterial({color:0xff8fc7,transparent:true,opacity:.8}));
+orb.add(core);
+// finale heart
+var big=new THREE.Mesh(hg,new THREE.MeshStandardMaterial({color:0xff6fae,emissive:0xff4f9f,emissiveIntensity:.6,roughness:.25}));
+big.position.set(0,0,-66);big.scale.setScalar(3.2);sc.add(big);
+var ring=[];
+for(i=0;i<16;i++){var q=new THREE.Mesh(hg,new THREE.MeshStandardMaterial({color:0xffc4e3,emissive:0xb88cff,emissiveIntensity:.5}));q.scale.setScalar(.35);sc.add(q);ring.push(q)}
+// stars
+var N=2200,pos=new Float32Array(N*3),col=new Float32Array(N*3),c1=new THREE.Color(0x9b6dff),c2=new THREE.Color(0xff8fc7);
+for(i=0;i<N;i++){pos[i*3]=(Math.random()-.5)*60;pos[i*3+1]=(Math.random()-.5)*40;pos[i*3+2]=20-Math.random()*100;
+var c=c1.clone().lerp(c2,Math.random());col.set([c.r,c.g,c.b],i*3)}
+var pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(pos,3));pg.setAttribute('color',new THREE.BufferAttribute(col,3));
+var pts=new THREE.Points(pg,new THREE.PointsMaterial({size:.12,vertexColors:true,transparent:true,opacity:.85,depthWrite:false,blending:THREE.AdditiveBlending}));
+sc.add(pts);
+
+var p=0,tp=0,mx=0,my=0,bar=document.getElementById('bar');
+function sp(){var h=document.documentElement.scrollHeight-innerHeight;tp=h>0?scrollY/h:0;bar.style.width=tp*100+'%'}
+addEventListener('scroll',sp);sp();
+addEventListener('pointermove',function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+addEventListener('resize',function(){W=innerWidth;H=innerHeight;ren.setSize(W,H);cam.aspect=W/H;cam.updateProjectionMatrix()});
+var clock=new THREE.Clock();
+function loop(){
+  var t=clock.getElapsedTime();p+=(tp-p)*.05;
+  cam.position.z=10-p*58;cam.position.x+=(mx*2-cam.position.x)*.05;cam.position.y+=(-my*1.4-cam.position.y)*.05;
+  cam.lookAt(mx*1.2,-my*.8,cam.position.z-10);cam.rotation.z=Math.sin(t*.3)*.03+p*.4;
+  pl.position.set(cam.position.x,cam.position.y+2,cam.position.z-3);
+  orb.rotation.y=t*.3;orb.rotation.x=t*.2;orb.scale.setScalar(1+Math.sin(t*2)*.05);
+  hearts.forEach(function(h){var d=h.userData;h.rotation.y=t*d.sp+d.a;h.rotation.z=Math.sin(t*d.sp+d.a)*.3;h.position.y=d.y+Math.sin(t*d.sp+d.a)*.6});
+  var beat=1+Math.pow(Math.sin(t*3),8)*.12+Math.sin(t*1.5)*.03;big.scale.setScalar(3.2*beat);big.rotation.y=Math.sin(t*.6)*.5;
+  ring.forEach(function(q,k){var a=t*.5+k/16*6.283;q.position.set(Math.cos(a)*6,Math.sin(a)*3.4,-66+Math.sin(a*2)*1.5);q.rotation.y=t+k});
+  pts.rotation.z=t*.01;
+  ren.render(sc,cam);requestAnimationFrame(loop)}
+loop();
+
+// reveal
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in')})},{threshold:.35});
+document.querySelectorAll('section').forEach(function(x){io.observe(x)});
+
+// countdown to next 25 Nov
+var cd=document.getElementById('cd'),cdn=document.getElementById('cdn');
+function tick(){
+  var n=new Date(),y=n.getFullYear(),T=new Date(y,10,25);
+  if(n>new Date(y,10,26))T=new Date(y+1,10,25);
+  var ms=T-n;
+  if(n>=new Date(y,10,25)&&n<new Date(y,10,26)){cd.innerHTML='<div><strong>Today</strong><span>is our day 💜</span></div>';cdn.textContent='Happy proposal anniversary, Girl & Boy!';return}
+  var d=Math.floor(ms/864e5),h=Math.floor(ms/36e5)%24,m=Math.floor(ms/6e4)%60,sx=Math.floor(ms/1e3)%60;
+  cd.innerHTML=[[d,'days'],[h,'hours'],[m,'mins'],[sx,'secs']].map(function(a){return '<div><strong>'+a[0]+'</strong><span>'+a[1]+'</span></div>'}).join('');
+  cdn.textContent='Another year of us is waiting on the 25th of November.'}
+tick();setInterval(tick,1000);
+
+// confetti hearts
+document.getElementById('yes').onclick=function(){
+  var e=['💜','💖','💗','🌸','✨','💍'];
+  for(var i=0;i<36;i++){var f=document.createElement('span');f.className='fl';f.textContent=e[i%6];
+    f.style.left=Math.random()*100+'vw';f.style.top=(80+Math.random()*20)+'vh';f.style.animationDelay=Math.random()*.8+'s';
+    document.body.appendChild(f);setTimeout(function(x){x.remove()}.bind(null,f),4200)}
+  this.textContent='She said yes. Again. 💜'};
+})();
+</script>
+</body>
+</html>
