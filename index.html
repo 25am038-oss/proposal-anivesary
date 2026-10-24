@@ -41,8 +41,8 @@ p{max-width:46ch;color:var(--soft);font-size:clamp(1rem,2.4vw,1.25rem);line-heig
 .cd div{min-width:92px;padding:18px 10px;background:var(--glass);border:1px solid rgba(201,179,234,.25);border-radius:20px;backdrop-filter:blur(10px)}
 .cd strong{display:block;font-size:2.6rem;font-weight:300}
 .cd span{font-family:Caveat,cursive;color:var(--pink);font-size:1.2rem}
-button{margin-top:34px;font:700 1.5rem Caveat,cursive;color:#fff;border:0;padding:14px 38px;border-radius:99px;cursor:pointer;background:linear-gradient(135deg,var(--violet),var(--pink));box-shadow:0 0 40px rgba(255,143,199,.55);transition:transform .3s}
-button:hover{transform:scale(1.08)}
+button, a#yes{margin-top:34px;font:700 1.5rem Caveat,cursive;color:#fff;border:0;padding:14px 38px;border-radius:99px;cursor:pointer;background:linear-gradient(135deg,var(--violet),var(--pink));box-shadow:0 0 40px rgba(255,143,199,.55);transition:transform .3s;text-decoration:none;display:inline-block}
+button:hover, a#yes:hover{transform:scale(1.08)}
 .fl{position:fixed;z-index:9;pointer-events:none;font-size:1.6rem;animation:up 3s ease-out forwards}
 @keyframes up{to{transform:translateY(-110vh) rotate(40deg);opacity:0}}
 small{margin-top:40px;font-family:Caveat,cursive;font-size:1.3rem;color:var(--soft)}
@@ -88,7 +88,7 @@ small{margin-top:40px;font-family:Caveat,cursive;font-size:1.3rem;color:var(--so
   <div class="tag r">and now, the part I never stopped meaning</div>
   <h2 class="r" style="max-width:20ch">Darsana, I’d ask you <i>all over again.</i></h2>
   <p class="r">Every sunrise, every silly joke, every quiet evening: it’s you, always you. Thank you for saying yes, and for saying it every day since.</p>
-<a href="https://25am038-oss.github.io/instagram/" id="yes" style="display:inline-block; text-decoration:none; ...your existing button styles...">Say yes again ❤️</a>
+  <a href="https://25am038-oss.github.io/instagram/" id="yes">Say yes again ❤️</a>
   <small class="r">— forever yours, Siddarth</small>
 </section>
 </main>
